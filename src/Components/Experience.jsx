@@ -32,19 +32,16 @@ function Experience() {
     },
   ]);
   return (
-    <div className="space-y-[50px]">
-      <div className="flex justify-center mb-5 text-2xl border-b-2 pb-5 border-white">
-        EXPERIENCE
-      </div>
+    <div className="mt-[80px]">
       {conpany.map((v, i) => (
         <div
           key={i}
-          className="card 2xl:card-side bg-neutral-content-200 shadow-xl"
+          className="card md:card-side bg-neutral-content-200 shadow-xl text-base-100"
         >
           <figure>
             <img
+            style={{width:'100px', minWidth:'200px', maxWidth:'300px'}}
               className="rounded-md ml-5"
-              style={{ maxHeight: "500px", minHeight: "200px" }}
               src={v.companyIMG}
               alt="Album"
             />

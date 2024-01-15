@@ -1,20 +1,27 @@
-import React from 'react'
-import GuyIMG from '../assets/Img/IMG_3384.jpg'
+import React from "react";
+import GuyIMG from "../assets/Img/IMG_3384.jpg";
 function aboutMe() {
     return (
-        <div className='flex justify-center'>
-            <div className="card w-[70%] bg-neutral-content-500 shadow-xl">
-                <div className="card-body">
-                    <h2 className="card-title flex justify-center text-neutral-200">About Me</h2>
-                    <p className='text-white'>MONGKOL POKPIPAT</p>
-                    <p className='text-white'>Guy</p>
-                    <p className='text-white'>Kasetsart University 2018-2022</p>
-                    <p className='text-white'>Bachelor of Science in Information and technology major</p>
+        <div>
+            <div className="card lg card-side bg-white shadow-xl pt-[80px]">
+            <figure>
+                <img
+                   style={{maxWidth:'500px'}} src={GuyIMG}
+                />
+            </figure>
+            <div className="card-body text-base-100">
+                <h1 className="card-title flex justify-center text-xl pb-4">About Me</h1>
+                <h2 className="card-title">Mongkol Pokpipat</h2>
+                <h2 className="card-title">Kasetsart university</h2>
+                <h2 className="card-title">Bachelor of science Information Technology (IT) major</h2>
+                <h2 className="card-title">23 years</h2>
+                <div className="card-actions justify-end">
+                    <button className="btn btn-base-100 text-white">Skill</button>
                 </div>
-                <figure><img width={1000} src={GuyIMG} alt="" /></figure>
             </div>
         </div>
-    )
+        </div>
+    );
 }
 
-export default aboutMe
+export default aboutMe;

@@ -1,0 +1,16 @@
+body, html {
+    scroll-behavior: smooth;
+  }
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.container-body{
+    padding-top: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 80px;
+}
